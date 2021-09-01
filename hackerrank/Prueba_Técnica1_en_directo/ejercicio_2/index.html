@@ -1,0 +1,27 @@
+<!-- Controlar el estado de un input solo con JavaScript -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>Update label span with input value when typing inside:</div>
+    <input type="text" id="inputText" />
+
+    <div>Input text value: <span id="valueSpan"></span></div>
+    <script>
+      const inputText = document.getElementById("inputText");
+      const valueSpan = document.getElementById("valueSpan");
+
+      function inputKeyDown(ev) {
+        valueSpan.innerText = inputText.value;
+      }
+
+      inputText.addEventListener("keyup", inputKeyDown);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,15 @@
+{
+  "name": "pruebas_acceso_ejemplos",
+  "version": "1.0.0",
+  "description": "",
+  "main": "0_sum_diagonal.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^27.1.0"
+  }
+}
